@@ -44,9 +44,19 @@ export default function Page({ children }: { children: React.ReactNode }) {
           letter-spacing: 0.1rem;
         }
 
+        h3 {
+          font-size: 1.5rem;
+        }
+
         p {
           font-size: 2rem;
           line-height: 1.5;
+        }
+        .text-center {
+          text-align: center;
+        }
+        img {
+          width: 100%;
         }
       `}</style>
     </>
