@@ -27,14 +27,16 @@ export default function Home({ cardData }: { cardData: any }) {
             <li key={card.title} className="card">
               <Image
                 src={card.img}
-                alt={card.alt}
+                alt=""
                 width={196}
                 height={160}
                 objectFit="cover"
               />
-              <div className="card__details">
-                <h3 className="text-center">{card.title}</h3>
-              </div>
+              <a href={card.link}>
+                <div className="card__details">
+                  <h2>{card.title}</h2>
+                </div>
+              </a>
             </li>
           ))}
         </ul>
@@ -47,10 +49,42 @@ export default function Home({ cardData }: { cardData: any }) {
             flex-wrap: wrap;
             justify-content: space-around;
           }
+          li {
+            margin: 0;
+          }
+
           .card {
-            border: 1px solid #a5df8e;
-            border-radius: 4px;
+            background-color: var(--background-color);
+            background-image: var(--background-image);
+            border: 2px solid var(--background-color);
+            /* border-radius: 4px; */
             margin: 0.5rem;
+          }
+
+          .card__details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            width: 100%;
+            height: 4rem;
+            margin: 0;
+            font-family: 'Lucida Console', 'Courier New', monospace;
+          }
+          h2 {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            padding: 0.1em 0.3em;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          a:hover {
+            text-decoration: underline;
           }
         `}</style>
       </div>

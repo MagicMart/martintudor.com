@@ -17,7 +17,11 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta name="description" content="Martin Tudor, Web Developer" />
-          <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="icon"
+            type="image/png"
+            href="https://d30v8sqsz26dxk.cloudfront.net/images/mylogo.png"
+          />
         </Head>
         <body>
           <Main />
