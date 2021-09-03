@@ -65,26 +65,29 @@ export default function Home({ cardData }: { cardData: any }) {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: transparent;
+            background-color: var(--paper-white);
             width: 100%;
             height: 4rem;
             margin: 0;
-            font-family: 'Lucida Console', 'Courier New', monospace;
+            font-family: 'Ariel', sans-serif;
           }
+
+          .card__details:hover {
+            background-color: transparent;
+          }
+
           h2 {
             margin: 0;
             padding: 0;
             background-color: white;
             font-size: 1.6rem;
+            font-weight: bold;
             letter-spacing: 0.1rem;
             padding: 0.1em 0.3em;
           }
           a {
             text-decoration: none;
-            color: black;
-          }
-          a:hover {
-            text-decoration: underline;
+            color: #383535;
           }
         `}</style>
       </div>
