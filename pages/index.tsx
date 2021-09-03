@@ -18,10 +18,6 @@ export default function Home({ cardData }: { cardData: any }) {
         <title>Home | martintudor.com</title>
       </Head>
       <div>
-        <p>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
         <ul>
           {cardData.map((card: any) => (
             <li key={card.title} className="card">
