@@ -11,9 +11,9 @@ export async function getStaticProps(context: GetStaticProps) {
   }
 }
 
-// const myLoader = ({ src, width, quality }) => {
-//   return `https://example.com/${src}?w=${width}&q=${quality || 75}`
-// }
+const myLoader = ({ src, width, quality }) => {
+  return `https://martintudor.net/images/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function Home({ cardData }: { cardData: any }) {
   return (
@@ -26,7 +26,8 @@ export default function Home({ cardData }: { cardData: any }) {
           {cardData.map((card: any) => (
             <li key={card.title} className="card">
               <Image
-                src={`${card.img}`}
+                loader={myLoader}
+                src={card.img.replace('https://martintudor.net/images/', '')}
                 alt=""
                 width={196}
                 height={160}
