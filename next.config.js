@@ -1,6 +1,10 @@
+import data from './data.json'
+
+const domains = data.map((item) => item.img)
+
 module.exports = {
   images: {
-    domains: ['martintudor.net', 'martintudor.net/images/game-of-life.jpg'],
+    domains,
   },
   target: 'serverless',
 }
