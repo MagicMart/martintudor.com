@@ -7,8 +7,11 @@ export default function Header() {
         <div className="logo"></div>
         <div className="logo-text">
           <h1>
-            <Link href="/">Martin Tudor</Link>
-            <br />
+            <span className="title">
+              <Link href="/">
+                <a>Martin Tudor</a>
+              </Link>
+            </span>
             <span className="subtitle">Web Developer</span>
           </h1>
         </div>
@@ -30,21 +33,36 @@ export default function Header() {
           background-image: var(--logo);
         }
         .logo-text {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 15rem;
-          height: var(--size);
-          /* background-color: var(--purple); */
+          padding: 1rem;
+        }
+        .title {
+          grid-area: title;
+        }
+        .subtitle {
+          grid-area: subtitle;
         }
         h1 {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            'title'
+            'subtitle';
+          justify-items: center;
+          align-items: center;
           font-size: 2rem;
           font-weight: bold;
         }
+
         .subtitle {
           font-size: 0.8em;
-          color: #aa7106;
-          letter-spacing: 0.1em;
+          color: #fdfaf9;
+          background-color: #662323;
+          transform: skew(-10deg);
+          padding: 0.5rem;
+        }
+        a {
+          text-decoration: none;
+          color: #4a4a4a;
         }
       `}</style>
     </header>

@@ -50,6 +50,8 @@ export default function Page({ children }: { children: React.ReactNode }) {
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 1rem;
           letter-spacing: 0.1rem;
+          color: #4a4a4a;
+          text-rendering: optimizeLegibility;
         }
 
         h1,
