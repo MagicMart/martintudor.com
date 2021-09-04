@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['https://martintudor.net'],
+    domains: ['martintudor.net', 'martintudor.net/images/game-of-life.jpg'],
   },
   target: 'serverless',
 }
