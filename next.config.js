@@ -1,10 +1,6 @@
-const data = require('./data.json')
-
-const domains = data.map((item) => item.img)
-
 module.exports = {
   images: {
-    domains,
+    domains: ['martintudor.net'],
   },
   target: 'serverless',
 }
