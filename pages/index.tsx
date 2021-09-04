@@ -22,7 +22,7 @@ export default function Home({ cardData }: { cardData: any }) {
           {cardData.map((card: any) => (
             <li key={card.title} className="card">
               <Image
-                src={card.img}
+                src={`${card.img}`}
                 alt=""
                 width={196}
                 height={160}
