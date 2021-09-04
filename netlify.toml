@@ -1,6 +1,0 @@
-[build]
-  command = "next build"
-  publish = "out"
-
-[build.environment]
-  NEXT_IMAGE_ALLOWED_DOMAINS = "martintudor.net"
