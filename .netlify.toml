@@ -1,0 +1,6 @@
+[build]
+  command = "next build"
+  publish = "out"
+
+[build.environment]
+  NEXT_IMAGE_ALLOWED_DOMAINS = "d30v8sqsz26dxk.cloudfront.net"
