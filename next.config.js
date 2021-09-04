@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['d30v8sqsz26dxk.cloudfront.net'],
+    domains: ['https://martintudor.net'],
   },
   target: 'serverless',
 }
