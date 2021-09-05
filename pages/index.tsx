@@ -23,9 +23,9 @@ export default function Home({ cardData }: { cardData: any }) {
   }: {
     src: string
     width: number | undefined
-    quality?: number | undefined
+    quality?: number
   }) => {
-    return `${src}`
+    return `${src}?w=${width}&q=${quality || 100}`
   }
   return (
     <>
@@ -44,7 +44,7 @@ export default function Home({ cardData }: { cardData: any }) {
                   width={196}
                   height={160}
                   objectFit="cover"
-                  unoptimized={true}
+                  // unoptimized={true}
                 />
                 <a href={card.link}>
                   <div className="card__details">
