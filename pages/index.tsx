@@ -28,8 +28,8 @@ export default function Home({ cardData }: { cardData: any }) {
                   // loader={myLoader}
                   src={card.img}
                   alt=""
-                  width={196}
-                  height={160}
+                  width="196"
+                  height="160"
                   layout="fixed"
                   objectFit="cover"
                 />
