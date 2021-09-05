@@ -1,19 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { GetStaticProps } from 'next'
 import data from '../data.json'
-
-export async function getStaticProps(context: GetStaticProps) {
-  const cardData = data
-
-  return {
-    props: { cardData }, // will be passed to the page component as props
-  }
-}
-
-// const myLoader = ({ src, width, quality }) => {
-//   return `https://martintudor.net/images/${src}?w=${width}&q=${quality || 75}`
-// }
 
 export default function Home({ cardData }: { cardData: any }) {
   const myLoader = ({
@@ -22,10 +9,10 @@ export default function Home({ cardData }: { cardData: any }) {
     quality,
   }: {
     src: string
-    width: number | undefined
+    width: number
     quality?: number
   }) => {
-    return `${src}?w=${width}&q=${quality || 50}`
+    return `${src}?w=${width}&q=${quality || 100}`
   }
   return (
     <>
@@ -34,7 +21,7 @@ export default function Home({ cardData }: { cardData: any }) {
       </Head>
       <div>
         <ul>
-          {cardData.map((card: any) => {
+          {data.map((card: any) => {
             return (
               <li key={card.title} className="card">
                 <Image
@@ -44,11 +31,13 @@ export default function Home({ cardData }: { cardData: any }) {
                   width={196}
                   height={160}
                   objectFit="cover"
-                  // unoptimized={true}
                 />
                 <a href={card.link}>
                   <div className="card__details">
-                    <h2>{card.title}</h2>
+                    <h2>
+                      {card.title}
+                      <span>&#128279;</span>
+                    </h2>
                   </div>
                 </a>
               </li>
