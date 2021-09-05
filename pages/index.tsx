@@ -3,17 +3,17 @@ import Image from 'next/image'
 import data from '../data.json'
 
 export default function Home({ cardData }: { cardData: any }) {
-  // const myLoader = ({
-  //   src,
-  //   width,
-  //   quality,
-  // }: {
-  //   src: string
-  //   width: number
-  //   quality?: number
-  // }) => {
-  //   return `${src}?w=${width}&q=${quality || 100}`
-  // }
+  const myLoader = ({
+    src,
+    width,
+    quality,
+  }: {
+    src: string
+    width: number
+    quality?: number
+  }) => {
+    return `${src}?w=${width}&q=${quality || 100}`
+  }
   return (
     <>
       <Head>
@@ -25,6 +25,7 @@ export default function Home({ cardData }: { cardData: any }) {
             return (
               <li key={card.title} className="card">
                 <Image
+                  loader={myLoader}
                   src={card.img}
                   alt=""
                   width={196}
