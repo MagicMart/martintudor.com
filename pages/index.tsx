@@ -25,7 +25,7 @@ export default function Home({ cardData }: { cardData: any }) {
             return (
               <li key={card.title} className="card">
                 <Image
-                  loader={myLoader}
+                  // loader={myLoader}
                   src={card.img}
                   alt=""
                   width={196}
