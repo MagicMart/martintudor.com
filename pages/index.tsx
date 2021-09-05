@@ -4,12 +4,7 @@ import { GetStaticProps } from 'next'
 import data from '../data.json'
 
 export async function getStaticProps(context: GetStaticProps) {
-  const cardData = data.map((item) => {
-    return {
-      ...item,
-      img: item.img,
-    }
-  })
+  const cardData = data
 
   return {
     props: { cardData }, // will be passed to the page component as props
@@ -30,17 +25,12 @@ export default function Home({ cardData }: { cardData: any }) {
         <ul>
           {cardData.map((card: any) => (
             <li key={card.title} className="card">
-              <Image
-                loader={({ src, width, quality }) =>
-                  `https://martintudor.net/images/${src}?w=${width}&q=${
-                    quality || 100
-                  }`
-                }
-                src={card.img.replace('https://martintudor.net/images/', '')}
+              <img
+                src={card.img}
                 alt=""
-                width={196}
-                height={160}
-                objectFit="cover"
+                width="196px"
+                height="160px"
+                // objectFit="cover"
               />
               <a href={card.link}>
                 <div className="card__details">
@@ -98,6 +88,11 @@ export default function Home({ cardData }: { cardData: any }) {
           a {
             text-decoration: none;
             color: #383535;
+          }
+          img {
+            width: 196px;
+            height: 160px;
+            object-fit: cover;
           }
         `}</style>
       </div>
