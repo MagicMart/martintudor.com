@@ -28,8 +28,8 @@ export default function Home({ cardData }: { cardData: any }) {
               <img
                 src={card.img}
                 alt=""
-                width="196px"
-                height="160px"
+                width="196"
+                height="160"
                 // objectFit="cover"
               />
               <a href={card.link}>
