@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['martintudor.net'],
+    domains: ['martintudor.net', 'netlify.com'],
   },
   target: 'serverless',
 }
