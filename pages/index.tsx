@@ -3,19 +3,30 @@ import Image from 'next/image'
 import { GetStaticProps } from 'next'
 import data from '../data.json'
 
-// export async function getStaticProps(context: GetStaticProps) {
-//   const cardData = data
+export async function getStaticProps(context: GetStaticProps) {
+  const cardData = data
 
-//   return {
-//     props: { cardData }, // will be passed to the page component as props
-//   }
-// }
+  return {
+    props: { cardData }, // will be passed to the page component as props
+  }
+}
 
 // const myLoader = ({ src, width, quality }) => {
 //   return `https://martintudor.net/images/${src}?w=${width}&q=${quality || 75}`
 // }
 
 export default function Home({ cardData }: { cardData: any }) {
+  const myLoader = ({
+    src,
+    width,
+    quality,
+  }: {
+    src: string
+    width: number | undefined
+    quality?: number | undefined
+  }) => {
+    return `${src}`
+  }
   return (
     <>
       <Head>
@@ -23,22 +34,26 @@ export default function Home({ cardData }: { cardData: any }) {
       </Head>
       <div>
         <ul>
-          {data.map((card: any) => (
-            <li key={card.title} className="card">
-              <img
-                src={card.img}
-                alt=""
-                width="196"
-                height="160"
-                // objectFit="cover"
-              />
-              <a href={card.link}>
-                <div className="card__details">
-                  <h2>{card.title}</h2>
-                </div>
-              </a>
-            </li>
-          ))}
+          {cardData.map((card: any) => {
+            return (
+              <li key={card.title} className="card">
+                <Image
+                  loader={myLoader}
+                  src={card.img}
+                  alt=""
+                  width={196}
+                  height={160}
+                  objectFit="cover"
+                  unoptimized={true}
+                />
+                <a href={card.link}>
+                  <div className="card__details">
+                    <h2>{card.title}</h2>
+                  </div>
+                </a>
+              </li>
+            )
+          })}
         </ul>
         <style jsx>{`
           ul {
