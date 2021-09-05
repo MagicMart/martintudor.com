@@ -14,7 +14,13 @@ export default function Page({ children }: { children: React.ReactNode }) {
         >
           Powered by{' '}
           <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image
+              src="https://martintudor.net/images/matt-botsford-OKLqGsCT8qs-unsplash.png"
+              alt="Vercel Logo"
+              width={50}
+              height={50}
+              objectFit="contain"
+            />
           </span>
         </a>
       </footer>
