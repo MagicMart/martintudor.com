@@ -3,16 +3,8 @@ import Image from 'next/image'
 import data from '../data.json'
 
 export default function Home({ cardData }: { cardData: any }) {
-  const myLoader = ({
-    src,
-    width,
-    quality,
-  }: {
-    src: string
-    width: number
-    quality?: number
-  }) => {
-    return `${src}?w=${width}&q=${quality || 100}`
+  const myLoader = ({ src, width }: { src: string; width: number }) => {
+    return `https://res.cloudinary.com/dibbxe0wt/image/upload/w_${width}/v1630868963/martintudordotcom/${src}`
   }
   return (
     <>
@@ -25,7 +17,7 @@ export default function Home({ cardData }: { cardData: any }) {
             return (
               <li key={card.title} className="card">
                 <Image
-                  // loader={myLoader}
+                  loader={myLoader}
                   src={card.img}
                   alt=""
                   width={196}

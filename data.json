@@ -1,42 +1,42 @@
 [
   {
-    "img": "https://martintudor.net/images/memory-cards.jpg",
+    "img": "memory_cards.png",
     "alt": "Memory cards - with React.js",
     "link": "https://memory.martintudor.com/",
     "title": "Memory Cards"
   },
   {
-    "img": "https://martintudor.net/images/martsphotos-500x500.jpg",
+    "img": "marts_photos.png",
     "alt": "A photo portfolio website",
     "link": "https://photos.martintudor.com/",
     "title": "Mart's Photos"
   },
   {
-    "img": "https://martintudor.net/images/update-menu.jpg",
+    "img": "updatestoke.png",
     "alt": "Update Menu",
     "link": "https://audio.martintudor.com/",
     "title": "Update Audio"
   },
   {
-    "img": "https://martintudor.net/images/weather-app.jpg",
+    "img": "weather_app.png",
     "alt": "A weather app",
     "link": "https://martin-weather-app.netlify.com/",
     "title": "Weather App"
   },
   {
-    "img": "https://martintudor.net/images/hacker-news.jpg",
+    "img": "hacker_news.png",
     "alt": "Posts from hacker news",
     "link": "https://hacker.martintudor.com/",
     "title": "Hacker News"
   },
   {
-    "img": "https://martintudor.net/images/shopping-site.jpg",
+    "img": "shopping_site.png",
     "alt": "Shopping site",
     "link": "https://shop.martintudor.com/",
     "title": "Shopping Site"
   },
   {
-    "img": "https://martintudor.net/images/game-of-life.jpg",
+    "img": "game_of_life.png",
     "alt": "The Game Of life app",
     "link": "https://life.martintudor.com/",
     "title": "Game of Life"
