@@ -30,7 +30,7 @@ export default function Home({ cardData }: { cardData: any }) {
                   alt=""
                   width={196}
                   height={160}
-                  layout="responsive"
+                  layout="fixed"
                   objectFit="cover"
                 />
                 <a href={card.link}>
