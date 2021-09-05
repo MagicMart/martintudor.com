@@ -15,10 +15,13 @@ export default function Page({ children }: { children: React.ReactNode }) {
           Powered by{' '}
           <span>
             <Image
-              src="https://martintudor.net/images/matt-botsford-OKLqGsCT8qs-unsplash.png"
+              loader={({ src, width, quality }) =>
+                `https://martintudor.net/images/${src}?w=${width}&q=${quality}`
+              }
+              src="matt-botsford-OKLqGsCT8qs-unsplash.png"
               alt="Vercel Logo"
-              width={50}
-              height={50}
+              width={72}
+              height={16}
               objectFit="contain"
             />
           </span>
