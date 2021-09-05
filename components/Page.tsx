@@ -19,6 +19,7 @@ export default function Page({ children }: { children: React.ReactNode }) {
               alt="Vercel Logo"
               width={72}
               height={16}
+              layout="fixed"
               objectFit="contain"
             />
           </span>
