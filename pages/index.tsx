@@ -25,7 +25,7 @@ export default function Home({ cardData }: { cardData: any }) {
     width: number | undefined
     quality?: number
   }) => {
-    return `${src}?w=${width}&q=${quality || 100}`
+    return `${src}?w=${width}&q=${quality || 50}`
   }
   return (
     <>
