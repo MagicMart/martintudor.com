@@ -17,7 +17,10 @@ export default function Page({ children }: { children: React.ReactNode }) {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a> */}
-        <p>Copyright Martin Tudor</p>
+        <p>
+          <span className="small">Created by</span>{' '}
+          <a href="https://github.com/MagicMart">github.com/MagicMart</a>
+        </p>
       </footer>
       <style global jsx>{`
         html {
@@ -71,6 +74,12 @@ export default function Page({ children }: { children: React.ReactNode }) {
         }
         img {
           width: 100%;
+        }
+        footer {
+          text-align: center;
+        }
+        .small {
+          font-size: smaller;
         }
       `}</style>
     </>
