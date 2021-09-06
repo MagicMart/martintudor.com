@@ -24,7 +24,6 @@ export default function Home({ cardData }: { cardData: any }) {
                   layout="fixed"
                   objectFit="cover"
                   quality={100}
-                  placeholder="blur"
                 />
                 <a href={card.link}>
                   <div className="card__details">
