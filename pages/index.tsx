@@ -3,9 +3,9 @@ import Image from 'next/image'
 import data from '../data.json'
 
 export default function Home({ cardData }: { cardData: any }) {
-  const myLoader = ({ src, width }: { src: string; width: number }) => {
-    return `https://res.cloudinary.com/dibbxe0wt/image/upload/w_${width}/v1630868963/martintudordotcom/${src}`
-  }
+  // const myLoader = ({ src, width }: { src: string; width: number }) => {
+  //   return `https://res.cloudinary.com/dibbxe0wt/image/upload/w_${width}/v1630868963/martintudordotcom/${src}`
+  // }
   return (
     <>
       <Head>
@@ -17,8 +17,7 @@ export default function Home({ cardData }: { cardData: any }) {
             return (
               <li key={card.title} className="card">
                 <Image
-                  loader={myLoader}
-                  src={card.img}
+                  src={`martintudordotcom/${card.img}`}
                   alt=""
                   width={196}
                   height={160}
