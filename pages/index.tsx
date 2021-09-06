@@ -53,7 +53,7 @@ export default function Home({ cardData }: { cardData: any }) {
           .card {
             background-color: var(--background-color);
             background-image: var(--background-image);
-            border: 2px solid var(--background-color);
+            border: 1px solid #dadce0;
             /* border-radius: 4px; */
             margin: 0.5rem;
           }
