@@ -12,7 +12,7 @@ export default function Header() {
                 <a>Martin Tudor</a>
               </Link>
             </span>
-            <span className="subtitle">Web Developer</span>
+            <span className="subtitle">WEB DEVELOPER</span>
           </h1>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function Header() {
         }
 
         .subtitle {
-          font-size: 0.8em;
+          font-size: 0.65em;
           color: #fdfaf9;
           background-color: #662323;
           transform: skew(-10deg);
