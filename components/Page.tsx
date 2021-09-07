@@ -18,8 +18,8 @@ export default function Page({ children }: { children: React.ReactNode }) {
           </span>
         </a> */}
         <p>
-          <span className="small">Created by</span>{' '}
-          <a href="https://github.com/MagicMart">github.com/MagicMart</a>
+          <a href="https://github.com/MagicMart">Martin Tudor</a>{' '}
+          <span>&#169;</span> {new Date().getFullYear()}
         </p>
       </footer>
       <style global jsx>{`
