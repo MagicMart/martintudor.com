@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Nav from './Nav'
 
 export default function Header() {
   return (
@@ -16,16 +17,21 @@ export default function Header() {
           </h1>
         </div>
       </div>
+      <Nav />
       <style jsx>{`
         header {
           margin-bottom: 2rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid green;
         }
         .logo-container {
           --size: 100px;
           display: flex;
           align-items: center;
-          width: fit-content;
-          /* outline: 1px solid var(--purple); */
+          margin-bottom: 2rem;
         }
         .logo {
           width: var(--size);
