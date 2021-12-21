@@ -25,7 +25,6 @@ export default function Header() {
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
-          border-bottom: 1px solid green;
         }
         .logo-container {
           --size: 100px;
