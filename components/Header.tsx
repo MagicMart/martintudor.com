@@ -9,9 +9,7 @@ export default function Header() {
         <div className="logo-text">
           <h1>
             <span className="title">
-              <Link href="/">
-                <a>Martin Tudor</a>
-              </Link>
+              <a href="https://github.com/MagicMart">Martin Tudor</a>
             </span>
             <span className="subtitle">WEB DEVELOPER</span>
           </h1>
