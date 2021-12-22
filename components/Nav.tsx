@@ -1,23 +1,25 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Nav() {
+  const router = useRouter()
   return (
     <nav>
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a className={router.pathname == '/' ? 'active' : ''}>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About</a>
+            <a className={router.pathname == '/about' ? 'active' : ''}>About</a>
           </Link>
         </li>
       </ul>
       <style jsx>{`
         nav {
-          width: 50%;
+          width: 100%;
         }
         ul {
           display: flex;
@@ -37,6 +39,9 @@ export default function Nav() {
           font-weight: bold;
           color: var(--text-color);
           text-decoration: none;
+        }
+        .active {
+          color: red;
         }
       `}</style>
     </nav>
