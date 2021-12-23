@@ -16,6 +16,13 @@ export default function Nav() {
             <a className={router.pathname == '/about' ? 'active' : ''}>About</a>
           </Link>
         </li>
+        <li>
+          <Link href="/contact">
+            <a className={router.pathname == '/contact' ? 'active' : ''}>
+              Contact
+            </a>
+          </Link>
+        </li>
       </ul>
       <style jsx>{`
         nav {
