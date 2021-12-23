@@ -16,17 +16,17 @@ const ContactForm = (
       </label>
     </p>
     <p>
-      <label htmlFor="name">
+      <label>
         Name: <input type="text" name="name" />
       </label>
     </p>
     <p>
-      <label htmlFor="email">
+      <label>
         Email: <input type="email" name="email" />
       </label>
     </p>
     <p>
-      <label htmlFor="message">
+      <label>
         Message: <textarea name="message"></textarea>
       </label>
     </p>
