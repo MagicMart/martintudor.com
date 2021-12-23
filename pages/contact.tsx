@@ -61,7 +61,6 @@ export default function Contact() {
       <Head>
         <title>Contact | martintudor.com</title>
       </Head>
-      {ContactForm}
       {formVisible ? ContactForm : ConfirmationMessage}
       <style jsx>{`
         input {
