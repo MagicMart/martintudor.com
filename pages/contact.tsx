@@ -1,19 +1,19 @@
 import Head from 'next/head'
 
-const contactForm: any = `
+const contactForm = `
   <form name="contact" method="POST" data-netlify="true">
     <p>
-      <label htmlFor="name">
+      <label>
         Name: <input type="text" name="name" />
       </label>
     </p>
     <p>
-      <label htmlFor="email">
+      <label>
         Email: <input type="email" name="email" />
       </label>
     </p>
     <p>
-      <label htmlFor="message">
+      <label>
         Message: <textarea name="message"></textarea>
       </label>
     </p>
@@ -23,13 +23,16 @@ const contactForm: any = `
   </form>
 `
 
+function createMarkup() {
+  return { __html: contactForm }
+}
 export default function Contact() {
   return (
     <>
       <Head>
         <title>Contact | martintudor.com</title>
       </Head>
-      <div dangerouslySetInnerHTML={contactForm}></div>
+      <div dangerouslySetInnerHTML={createMarkup()}></div>
       <style jsx>{`
         input {
           width: 100%;
