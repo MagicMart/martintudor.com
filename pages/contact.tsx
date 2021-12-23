@@ -3,17 +3,17 @@ import Head from 'next/head'
 const ContactForm = (
   <form name="contact" method="POST" data-netlify="true">
     <p>
-      <label>
+      <label htmlFor="name">
         Name: <input type="text" name="name" />
       </label>
     </p>
     <p>
-      <label>
+      <label htmlFor="email">
         Email: <input type="email" name="email" />
       </label>
     </p>
     <p>
-      <label>
+      <label htmlFor="message">
         Message: <textarea name="message"></textarea>
       </label>
     </p>
