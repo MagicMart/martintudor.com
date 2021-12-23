@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const contactForm = `
+const ContactForm = (
   <form name="contact" method="POST" data-netlify="true">
     <p>
       <label>
@@ -21,18 +21,15 @@ const contactForm = `
       <button type="submit">Send</button>
     </p>
   </form>
-`
+)
 
-function createMarkup() {
-  return { __html: contactForm }
-}
 export default function Contact() {
   return (
     <>
       <Head>
         <title>Contact | martintudor.com</title>
       </Head>
-      <div dangerouslySetInnerHTML={createMarkup()}></div>
+      {ContactForm}
       <style jsx>{`
         input {
           width: 100%;
