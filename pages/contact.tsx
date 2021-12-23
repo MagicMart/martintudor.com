@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 
 const ContactForm = (
   <form
@@ -46,13 +45,6 @@ export default function Contact() {
   const ConfirmationMessage = (
     <>
       <p>Thank you for submitting this form.</p>
-
-      {/* <button
-        onClick={() => router.replace('/contact', undefined, { shallow: true })}
-      >
-        {' '}
-        Submit Another Response{' '}
-      </button> */}
     </>
   )
 
@@ -62,22 +54,6 @@ export default function Contact() {
         <title>Contact | martintudor.com</title>
       </Head>
       {formVisible ? ContactForm : ConfirmationMessage}
-      <style jsx>{`
-        input {
-          width: 100%;
-          height: 3rem;
-        }
-        textarea {
-          width: 100%;
-        }
-        input,
-        textarea {
-          font-size: 2rem;
-        }
-        button {
-          font-size: 4rem;
-        }
-      `}</style>
     </>
   )
 }
