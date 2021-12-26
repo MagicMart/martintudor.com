@@ -23,7 +23,7 @@ export default function Home({ cardData }: { cardData: any }) {
                   height={160}
                   layout="fixed"
                   objectFit="cover"
-                  quality={90}
+                  quality={80}
                 />
                 <a href={card.link}>
                   <div className="card__details">
