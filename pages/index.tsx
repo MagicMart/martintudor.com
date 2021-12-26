@@ -20,7 +20,7 @@ export default function Home() {
                   src={`martintudordotcom/${card.img}`}
                   alt=""
                   width={196}
-                  height={160}
+                  height={147}
                   layout="fixed"
                   objectFit="cover"
                   quality={80}
