@@ -13,7 +13,7 @@ export default function Home({ cardData }: { cardData: any }) {
       </Head>
       <div>
         <ul>
-          {data.map((card: any) => {
+          {data.map((card) => {
             return (
               <li key={card.title} className="card">
                 <Image
