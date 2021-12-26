@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import data from '../data.json'
 
-export default function Home({ cardData }: { cardData: any }) {
+export default function Home() {
   // const myLoader = ({ src, width }: { src: string; width: number }) => {
   //   return `https://res.cloudinary.com/dibbxe0wt/image/upload/w_${width}/v1630868963/martintudordotcom/${src}`
   // }
