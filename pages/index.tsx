@@ -91,11 +91,6 @@ export default function Home() {
             text-decoration: none;
             color: #383535;
           }
-          img {
-            width: 196px;
-            height: 160px;
-            object-fit: cover;
-          }
         `}</style>
       </div>
     </>
