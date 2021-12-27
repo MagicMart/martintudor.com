@@ -16,15 +16,14 @@ export default function Home() {
           {data.map((card) => {
             return (
               <li key={card.title} className="card">
-                <Image
-                  src={`martintudordotcom/${card.img}`}
-                  alt=""
-                  width={196}
-                  height={147}
-                  layout="fixed"
-                  objectFit="cover"
-                  quality={80}
-                />
+                <div className="image-container">
+                  <Image
+                    src={`martintudordotcom/${card.img}`}
+                    alt=""
+                    layout="fill"
+                    quality={80}
+                  />
+                </div>
                 <a href={card.link}>
                   <div className="card__details">
                     <h2>
@@ -56,6 +55,12 @@ export default function Home() {
             border: 2px solid green;
             /* border-radius: 4px; */
             margin: 0.5rem;
+          }
+
+          .image-container {
+            position: relative;
+            width: 196px;
+            height: 147px;
           }
 
           .card__details {
