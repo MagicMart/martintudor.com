@@ -21,7 +21,9 @@ export default function Home() {
                     src={`martintudordotcom/${card.img}`}
                     alt=""
                     layout="fill"
-                    quality={80}
+                    quality={75}
+                    placeholder="blur"
+                    blurDataURL={`https://res.cloudinary.com/dibbxe0wt/image/upload/c_scale,w_10/v1640621375/martintudordotcom/${card.img}`}
                   />
                 </div>
                 <a href={card.link}>
