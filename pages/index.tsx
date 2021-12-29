@@ -23,7 +23,7 @@ export default function Home() {
                     layout="fill"
                     quality={75}
                     placeholder="blur"
-                    blurDataURL={`https://res.cloudinary.com/dibbxe0wt/image/upload/c_scale,f_auto,w_10/v1640632217/martintudordotcom/${card.img}`}
+                    blurDataURL={`/${card.img}`}
                   />
                 </div>
                 <a href={card.link}>
