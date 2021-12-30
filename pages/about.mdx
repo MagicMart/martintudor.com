@@ -8,13 +8,33 @@ import MyHead from '../components/MyHead'
 
 Hello, my name is Martin Tudor. I write code for computers and humans. I like getting stuff working.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0VkrUG3OrPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+<div className="resp-container">
+  <iframe
+    className="resp-iframe"
+    src="https://www.youtube.com/embed/0VkrUG3OrPc"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
 
 <style jsx>{`
   img[alt='Martin Tudor'] {
     width: 25%;
     height: auto;
+  }
+  .resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+  .resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 `}</style>
