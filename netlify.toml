@@ -3,5 +3,5 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; style-src 'unsafe-inline' *.netlify.app *.martintudor.com martintudor.com; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self' data: *.cloudinary.com cloudinary.com *.cloudfront.net cloudfront.net; base-uri 'self';"
+    Content-Security-Policy = "default-src 'self' youtube.com *.youtube.com; style-src 'unsafe-inline' *.netlify.app *.martintudor.com martintudor.com; form-action 'self'; script-src 'self'; connect-src 'self'; img-src 'self' data: *.cloudinary.com cloudinary.com *.cloudfront.net cloudfront.net; base-uri 'self';"
 
