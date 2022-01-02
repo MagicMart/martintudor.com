@@ -23,6 +23,13 @@ export default function Nav() {
             </a>
           </Link>
         </li>
+        <li>
+          <Link href="/blog">
+            <a className={/blog*/.test(router.pathname) ? 'active' : ''}>
+              Blog
+            </a>
+          </Link>
+        </li>
       </ul>
       <style jsx>{`
         nav {
@@ -30,12 +37,14 @@ export default function Nav() {
         }
         ul {
           display: flex;
+          flex-wrap: wrap;
           list-style: none;
           margin: 0;
           padding: 0;
         }
         li {
-          margin-left: 2rem;
+          margin-left: 1.5rem;
+          margin-bottom: 1rem;
         }
         a:hover {
           text-decoration: underline;
