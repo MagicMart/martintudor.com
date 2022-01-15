@@ -33,6 +33,7 @@ export default function Header() {
           width: var(--size);
           height: var(--size);
           background-image: var(--logo);
+          background-size: var(--size);
         }
         .logo-text {
           padding: 1rem;
