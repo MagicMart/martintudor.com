@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+
 import Head from 'next/head'
 import Image from 'next/image'
 import data from '../data.json'

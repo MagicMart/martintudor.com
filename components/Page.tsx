@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import Image from 'next/image'
 import Header from './Header'
 

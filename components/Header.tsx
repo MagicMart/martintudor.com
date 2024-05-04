@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import Nav from './Nav'
 
 export default function Header() {
