@@ -24,13 +24,6 @@ export default function Nav() {
             </a>
           </Link>
         </li>
-        <li>
-          <Link href="/blog">
-            <a className={/blog*/.test(router.pathname) ? 'active' : ''}>
-              Blog
-            </a>
-          </Link>
-        </li>
       </ul>
       <style jsx>{`
         nav {
