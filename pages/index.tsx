@@ -21,7 +21,7 @@ export default function Home() {
                 <div className="image-container">
                   <Image
                     src={`martintudordotcom/${card.img}`}
-                    alt=""
+                    alt={card.alt}
                     layout="fill"
                     quality={75}
                     placeholder="blur"
@@ -75,7 +75,7 @@ export default function Home() {
             width: 100%;
             height: 4rem;
             margin: 0;
-            font-family: 'Ariel', sans-serif;
+            font-family: 'Arial', sans-serif;
           }
 
           .card__details:hover {

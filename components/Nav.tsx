@@ -9,12 +9,12 @@ export default function Nav() {
       <ul>
         <li>
           <Link href="/">
-            <a className={router.pathname == '/' ? 'active' : ''}>Home</a>
+            <a className={router.pathname === '/' ? 'active' : ''}>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/contact">
-            <a className={router.pathname == '/contact' ? 'active' : ''}>
+            <a className={router.pathname === '/contact' ? 'active' : ''}>
               Contact
             </a>
           </Link>
